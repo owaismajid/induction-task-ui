@@ -1,0 +1,79 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header h1{
+    text-transform: uppercase;
+    color: 554;
+    text-align: center;
+}
+
+section#frame{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-gap: 1em;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 2px solid coral;
+    padding: 2em 0;
+
+}
+
+
+.money-actions{
+    grid-column: 3
+}
+
+.snacks{
+    border: 1px solid darkorange;
+    border-radius: 20px;
+    padding: 1em;
+}
+
+.snacks .snack-item{
+    border-bottom: 1px dashed tomato;
+}
+
+.snack-price::before{
+    content: "Price: ";
+    font-size: 0.7em;
+}
+.snack-price::after{
+    content: " JD";
+    font-size: 0.7em;
+}
+
+.snack-quantity::after{
+    content: " Left";
+    font-size: 0.7em;
+}
+
+.money-monitor{
+    margin: 1em 0;
+}
+.money-monitor::after{
+    content: " JD";
+    font-size: 0.7em;
+}
+
+.intransaction::before{
+    content: "inransaction: "
+}
+.inside::before{
+    content: "Inside: "
+}
+.change::before{
+    content: "Change: "
+}
+
+section#money-units{
+    margin: 2em auto;
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
